@@ -139,14 +139,6 @@ h3 { font-size: 1.02rem; margin: 0; }
 .entry ul { margin: .5rem 0 0; padding-left: 1.2rem; }
 .entry li + li { margin-top: .25rem; }
 
-/* ---------- Coursework ---------- */
-.coursework { margin-top: 1.5rem; border: 1px solid var(--border); border-radius: var(--radius); }
-.coursework summary { cursor: pointer; padding: .7rem 1rem; font-weight: 600; }
-.coursework table { width: 100%; border-collapse: collapse; font-size: .93rem; }
-.coursework th, .coursework td { text-align: left; padding: .4rem 1rem; border-top: 1px solid var(--border); }
-.coursework th { color: var(--muted); font-weight: 600; }
-.coursework td:last-child, .coursework th:last-child { text-align: right; font-variant-numeric: tabular-nums; }
-
 /* ---------- Projects ---------- */
 .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 1rem; }
 .card { padding: 1rem 1.15rem; border: 1px solid var(--border); border-radius: var(--radius); background: var(--surface); }
@@ -160,9 +152,8 @@ h3 { font-size: 1.02rem; margin: 0; }
 .plain { padding-left: 1.2rem; margin: 0; }
 .plain li + li { margin-top: .35rem; }
 
-.skills { display: grid; grid-template-columns: max-content 1fr; gap: .45rem 1.25rem; margin: 0; }
-.skills dt { font-weight: 600; }
-.skills dd { margin: 0; }
+.refs { list-style: none; padding: 0; margin: 0; }
+.refs li + li { margin-top: .4rem; }
 
 /* ---------- Footer ---------- */
 .site-footer { border-top: 1px solid var(--border); color: var(--muted); font-size: .85rem; text-align: center; padding: 1.5rem 1rem; }
@@ -175,8 +166,6 @@ h3 { font-size: 1.02rem; margin: 0; }
   .avatar { width: 128px; height: 128px; }
   .hero h1 { font-size: 1.75rem; }
   .links { justify-content: center; }
-  .skills { grid-template-columns: 1fr; }
-  .skills dd { margin-bottom: .5rem; }
 }
 
 /* ---------- Print ---------- */
@@ -184,6 +173,5 @@ h3 { font-size: 1.02rem; margin: 0; }
   .site-header, .skip-link, .links svg { display: none; }
   body { font-size: 11pt; background: #fff; color: #000; }
   a { color: #000; }
-  .coursework { border: 0; }
   .card, .pub { break-inside: avoid; }
 }
