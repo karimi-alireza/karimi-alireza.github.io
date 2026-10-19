@@ -124,7 +124,8 @@ h3 { font-size: 1.02rem; margin: 0; }
 .pub { padding: 1rem 1.25rem; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); }
 .pub p { margin: 0; }
 .pub-title { font-weight: 600; font-size: 1.05rem; }
-.pub-venue { margin-top: .3rem !important; color: var(--muted); }
+.pub-authors { margin-top: .3rem !important; font-size: .95rem; }
+.pub-venue { margin-top: .2rem !important; color: var(--muted); }
 .pub-desc { margin-top: .6rem !important; font-size: .95rem; }
 .badge {
   display: inline-block; font-size: .75rem; font-weight: 600; padding: .1rem .5rem; margin-right: .25rem;
