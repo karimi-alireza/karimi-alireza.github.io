@@ -18,3 +18,13 @@ assets/Alireza_Karimi_CV.pdf
 - **CV:** replace `assets/Alireza_Karimi_CV.pdf` and keep the same file name, so existing links keep working.
 - **Preview locally:** `python3 -m http.server 8000`, then open http://localhost:8000.
 - After a significant change, update `Last updated` in the footer and `<lastmod>` in `sitemap.xml`.
+
+## Search engines
+
+- **Google:** in Search Console, the sitemap is submitted under *Sitemaps*. After a big update, use *URL Inspection → Request indexing*.
+- **Bing, Yandex and others (IndexNow):** the key file `454296dfcf91e56b039e2893493c3244.txt` proves site ownership. After an update, notify them with:
+
+  ```sh
+  curl -X POST https://api.indexnow.org/indexnow -H "Content-Type: application/json" \
+    -d '{"host":"karimi-alireza.github.io","key":"454296dfcf91e56b039e2893493c3244","urlList":["https://karimi-alireza.github.io/"]}'
+  ```
