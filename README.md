@@ -2,7 +2,7 @@
 
 Source for my personal website, served by GitHub Pages.
 
-Plain HTML and CSS: no build step, no JavaScript, no dependencies.
+Plain HTML and CSS: no build step, no dependencies. The only script is the Google Analytics tag (ID `G-DXT0W7WXR1`) in `index.html` and `404.html`.
 
 ```
 index.html               the whole site (one page)
